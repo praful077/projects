@@ -1,0 +1,234 @@
+body{
+    margin: 0;
+}
+.container{
+    background-color:#FAFAFA;
+    height:720px;
+    width: 1560px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.hero{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.logo{
+    position: fixed;
+    top: 0px;
+    right:656px;
+}
+
+.img1{
+    position: fixed;
+    top: 72px;
+    left: 166px;
+    border-radius: 50%;
+    border: 20px solid #FAFAFA;
+    height: 576px;
+    width: 576px;
+    background: transparent url('img/Ellipse 2.png') 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 31px #0000000A;
+}
+
+.img2{
+    position: fixed;
+    top: 106px;
+    height: 58px;
+    width: 272px;
+}
+
+.text1{
+    position: fixed;
+    top: 183.17px;
+    width: 500px;
+    height: 100px;
+    font: normal normal 300 40px/47px Roboto;
+}
+
+.text2{
+    position: fixed;
+    top: 315.05px;
+    font: normal normal normal 25px/33px Roboto;
+    height: 33px;
+    width: 260px;
+}
+
+.username{
+    position: fixed;
+    top:371.5px;
+    height: 49px;
+    width: 429px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding: 5px;
+}
+/* 
+.uname ::placeholder{
+    position: fixed;
+    top: 14.63px;
+    bottom: 14.37px;
+    height: 20px;
+    width: 68px;
+
+} */
+
+.password{
+    position: fixed;
+    top: 447.5px;
+    height: 49px;
+    width: 429px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* .pass ::placeholder{
+    position: fixed;
+    top: 13.63px;
+    bottom: 15.37px;
+    width: 66px;
+    height: 20px; */
+
+    /* left: 348.5px;
+} */
+
+.button{
+    position: fixed;
+    top: 536.65px;
+    background-color: #C8242F;
+    height: 45px;
+    width: 138px;
+    border-radius: 23px;
+}
+
+.forgot{
+    position: fixed;
+    top: 550px;
+    right:245.56px;
+    height: 20px;
+    width: 121px;
+}
+
+.register{
+    position: fixed;
+    top: 595.13px;
+}
+
+.register a {
+    text-decoration: none;
+    color: #C8242F;
+}
+/* dashbord */
+.sub-header {
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .icon{
+    width: 18px;
+    height: 18px;
+    /* padding-top: 4px;
+    padding-right: 4px; */
+    border: none;
+    
+  }
+  .items{
+    
+    text-align: left;
+    font: normal normal
+    normal 16px/21px roboto;
+    letter-spacing: 0px;
+    color:rgba(0, 0, 0, 1);
+    border: none;
+    margin-bottom: 4px,4px,4px;
+  
+  }
+ /* .active2{
+    
+    border-radius: 5px;
+    background-color: rgba(255, 243, 244, 1);
+  } */
+
+.list-group-item:nth-child(1) {
+    color: rgba(200, 36, 47, 1)
+}
+.text3{
+    font: normal normal normal 25px/33px Roboto,medium;
+    height: 39px;
+    width: 146px;
+    top: 120px;
+    right: 1124px;
+    
+
+}
+.dicon{
+    height: 34px;
+    width: 34px;
+    margin-right: 19px;
+}
+.number2{
+    height: 33px;
+    width: 77px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.section{
+    width: 100%;
+    padding: 40px 48px;
+}
+.componet{
+ padding: 42px 38px 42px 38px;
+ align-items: center;
+}
+.sidebar{
+    height: 1279px;
+    width: 242px;
+}
+.sale1{
+    height: 29px;
+    width: 43px;
+}
+ /* #paid{
+
+    color: #3CDD5F;
+}
+#failed{
+    color: #FF4545;
+}
+#pending{
+    color: #BABABA; 
+} */
+
+.buttonpaid
+{
+    border-radius:5px;
+    background-color: #EBFFEF;
+    color:#3CDD5F;
+    border:none;
+   
+}
+.buttonfail
+{
+    border-radius:5px;
+    color: #FF4545;
+    background-color: #FFF5F5;
+    border:none;
+    padding: 3px 10px 3px 10px;
+}
+.buttonpending
+{
+    border-radius:5px;
+    color:#BABABA;
+    background-color: #F8F8F8;
+    border:none;
+    
+}
+
+/* .sale1 {
+    display: flex;
+    gap:20px;
+} */
