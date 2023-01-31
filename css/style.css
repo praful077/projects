@@ -21,7 +21,7 @@ body {
     border: 20px solid #fff;
     box-shadow: 0px 4px 31px #0000000a;
     border-radius: 50%;
-    margin: 0;
+    margin: auto;
   }
   .container3 {
     margin: 0;
@@ -137,11 +137,15 @@ body {
     }
     .container2 {
       padding: 0;
-      
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+
       
     }
     .container3{
         text-align: center;
+        margin-top: 20px;
     }
     .heroimg {
       padding: 0 20px ;
@@ -181,6 +185,10 @@ body {
     }
   }
 /* dashbord */
+
+
+
+
 .sub-header {
     justify-content: space-between;
     align-items: center;
@@ -206,15 +214,18 @@ body {
     margin-bottom: 4px,4px,4px;
   
   }
- /* .active2{
+
+
+ .activelink{
     
-    border-radius: 5px;
+   
     background-color: rgba(255, 243, 244, 1);
-  } */
+  }
 
 .list-group-item:nth-child(1) {
     color: rgba(200, 36, 47, 1)
 }
+
 .text3{
     font: normal normal normal 25px/33px Roboto,medium;
     height: 39px;
@@ -255,53 +266,78 @@ body {
     height: 29px;
     width: 43px;
 }
- /* #paid{
 
-    color: #3CDD5F;
-}
-#failed{
-    color: #FF4545;
-}
-#pending{
-    color: #BABABA; 
-} */
 
-.r{
-    width: 18px;
-    height: 18px;
-     margin-left: 1px;
-     margin-right: 9px;
-    border-radius: 50%;
-    background-color: #C8242F;
-    opacity: 1;
+
+
+.dot1{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #c8242f;
+  display:inline-block;
+  margin-right: 9px;
+  vertical-align: middle;
 }
-.g{
-    width: 18px;
-    height: 18px;
-     margin-left: 26px;
-     margin-right: 9px;
-    border-radius: 50%;
-    background-color:#A2B86C;
+.dot2{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #A2B86C;
+  display:inline-block;
+  margin-right: 9px;
+  vertical-align: middle;
+}
+.dot3{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color:#F16C20;
+  display:inline-block;
+  margin-right: 9px;
+  vertical-align: middle;
+}
+.dot4{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #EBC844;
+  display:inline-block;
+  margin-right: 9px;
+  vertical-align: middle;
+}
+
+.country{
+  font-size: 15px;
+  line-height: 20px;
 
 }
-.o{
-    width: 18px;
-    height: 18px;
-     margin-left: 1px;
-     margin-right: 9px;
-    border-radius: 50%;
-    background-color:#F16C20;
 
-}
-.y{
-    width: 18px;
-    height: 18px;
-     margin-left: 158px;
-     margin-right: 9px;
-    border-radius: 50%;
-    background-color:#EBC844;
 
+
+@media only screen and (max-width: 1076px){
+  .pie-chart-data {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
+
+@media only screen and (max-width: 768px) {
+  .search-box {
+    display: none;
+  }
+  .logo-container {
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 768px){
+  .john{
+    display: none;
+  }
+}
+
 .heading{
     color: #ADADAD;
 }
@@ -331,49 +367,157 @@ body {
     
 }
 
-/* .sale1 {
-    display: flex;
-    gap:20px;
-} */
-/* innerpage */
-.form-head{
-    font-size: 22px;
-    line-height: 29px;
-    color: #3E3e3e;
-  }
-  .sub-head{
-    font-size: 18px;
-    line-height: 24px;
-    color: #3e3e3e;
-    margin: 21px 0 15px 0;
-  }
-  .message{
-    border: 1px solid #ff3535;
-    border-radius: 5px;
-    color: #ff3535;
-    padding: 10px;
-    margin-bottom: 5px;
-  }
-  .message:nth-child(2){
-    border-color: #00B9E1;
-    color: #00B9E1;
-  }
-  .message:nth-child(3){
-    border-color:#FFA800;
-    color:#FFA800;
-  }
-  .message:nth-child(4){
-    border-color: #00AF27;
-    color:#00AF27;
-  }
+
+
+           /* innerpage */
+
+.form-head {
+  font-size: 22px;
+  line-height: 29px;
+  color: #3e3e3e;
+}
+.sub-head {
+  font-size: 18px;
+  line-height: 24px;
+  color: #3e3e3e;
+  margin: 21px 0 15px 0;
+}
+.message {
+  border: 1px solid #ff3535;
+  border-radius: 5px;
+  color: #ff3535;
+}
+
+.nav-link.active {
+  color: #c8242f;
+  border: none;
+  border-bottom: 3px solid #c8242f !important;
+
+  color: #c8242f !important;
+  background-color: none !important;
+}
+.nav-link {
+  border: none;
+  color: #adadad;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+input {
+  border: none;
+  width: 100%;
+}
+::placeholder{
+  color: #adadad !important;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #c8242f;
+}
+.form-check-input:checked {
+  background-color: #c8242f;
+  border-color: #c8242f;
+}
+
+
+
+
+.disabled {
+  border: 1px dashed #adadad !important;
+}
+.filelabel {
+  border: 1px solid #c8242f;
+  border-radius: 18px;
+  color: #c8242f;
+  padding: 0.5rem 1.5rem;
+  margin-right: 20px;
+}
+#filechosed {
+  font-size: 12px;
+  line-height: 16px;
+  color: #adadad;
+}
+
+.form-check-input:checked[type=radio] {
+  background-color: #fff;
+  background-image: url(../images/radio-checked-icon.svg) !important;
+}
+
+.btn-danger:hover {
+  background-color: #fafafa;
+  color: #c8242f;
+}
+
+.dropdown{
+  position: relative;
+  color: #000000;
+
+
+}
+.arrow{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+  height: 39px;
   
-  .tab{
-    color: #adadad;
-    font-size: 15px;
-    font-weight: 550;
-  }
-  .activetab{
-    color: #c8242f;
-    border-bottom: 3px solid #c8242f;
-    padding: 8px 16px;
-  }
+}
+
+.input4 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #DADCE0;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+
+      /* Hide the placeholder texts (a) */
+
+.four input::placeholder {
+  color: transparent !important;
+}
+
+.label4 {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: white;
+  color: #DADCE0;
+  font-size: 13px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.input4:focus + .label4 {
+  top: -7px;
+  left: 7px;
+  z-index: 10;
+  font-weight: 600;
+  color: #ff3b3b;
+}
+.input4:focus{
+  border: 1px solid #ff3b3b;
+}
+
+.input4:not(:placeholder-shown)+ .label4 {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+}
